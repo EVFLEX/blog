@@ -76,6 +76,8 @@ The video says to create a file called "CNAME" with as content just the URL wher
 
 The first time I failed because the video did not prompt me to set the upstream branch. But this worked so to check I went to github.com, refreshed the page and saw that CNAME showed up in the branch.
 
+Another problem I ran into was that github kept warning me that it had added Github (RSA) to the list of known hosts. Jeremiah Gowdy came up with [the solution on stackoverflow](http://stackoverflow.com/questions/9299651/warning-permanently-added-to-the-list-of-known-hosts-message-from-git): go to users\Auke\.ssh and add a file called config with the line "UserKnownHostsFile ~/.ssh/known_hosts". Problem solved.
+
 The final step is to tell the registrar to point to Github. In my case this is Byte.nl. So I surfed to their service panels DNS settings and create the following records:
 
     evflex.org, type A, content 192.30.252.153
