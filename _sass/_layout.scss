@@ -220,7 +220,7 @@
     letter-spacing: 8px;
     line-height: 135%;
     margin: 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-align: center;
 
     @include media-query($on-laptop) {
