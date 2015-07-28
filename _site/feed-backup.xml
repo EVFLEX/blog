@@ -6,8 +6,8 @@
     <description></description>
     <link>http://EVflex.org/</link>
     <atom:link href="http://EVflex.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2015 18:21:52 +0200</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2015 18:21:52 +0200</lastBuildDate>
+    <pubDate>Tue, 28 Jul 2015 18:26:15 +0200</pubDate>
+    <lastBuildDate>Tue, 28 Jul 2015 18:26:15 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -261,7 +261,7 @@ jekyll serve
         <title>Git Document Management</title>
         <description>&lt;p&gt;&lt;img src=&quot;../Pics/Felicia_Day_Librarian_Widescreen.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;I think the use of coders jargon clouds the fact Git is also perfect for “normal” people that want document management and collaboration for “normal” documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library to describe why Git is also useful to non-coders.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I think the use of coders jargon clouds the fact Git is also perfect for “normal” people that want document management and collaboration for “normal” documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Programmers (or “coders”) are notoriously precise about managing their code: one typo and nothing works anymore. One of the best programs for managing code is called Git. It was developed by Linus Thorvalts to manage the development of Linux. But what is Git exactly?&lt;/p&gt;

@@ -10,7 +10,7 @@ tags: home work office coding design
 ---
 ![](../Pics/Felicia_Day_Librarian_Widescreen.jpg)
 
-**I think the use of coders jargon clouds the fact Git is also perfect for "normal" people that want document management and collaboration for "normal" documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library to describe why Git is also useful to non-coders.**
+**I think the use of coders jargon clouds the fact Git is also perfect for "normal" people that want document management and collaboration for "normal" documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library.**
 
 # Introduction
 Programmers (or "coders") are notoriously precise about managing their code: one typo and nothing works anymore. One of the best programs for managing code is called Git. It was developed by Linus Thorvalts to manage the development of Linux. But what is Git exactly?
