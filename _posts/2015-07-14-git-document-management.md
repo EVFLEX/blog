@@ -10,17 +10,17 @@ tags: home work office coding design
 ---
 ![](../Pics/Felicia_Day_Librarian_Widescreen.jpg)
 
-**Programmers (or "coders") are notoriously precise about managing their files (or "code"). Of course they also know a thing or two about computers so you can be sure that the program they use for managing files is a good one. The most popular (and many coders think best) program is open source and called "Git". It was developed by Linus Thorvalts to manage the development of Linux.**
-
-**I think the use of coders jargon often clouds the fact Git is also perfect for "normal" people that want version management and collaboration for "normal" documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library to describe why Git is also useful to non-coders.**
+**I think the use of coders jargon clouds the fact Git is also perfect for "normal" people that want document management and collaboration for "normal" documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library to describe why Git is also useful to non-coders.**
 
 # Introduction
-You probably know that it is a good idea to save your work in case your program crashes and to make a backup in case your hard drive crashes. Git does not change that. Git is about keeping countless versions without cluttering your workspace and working together on files with a minimum of fuss.
+Programmers (or "coders") are notoriously precise about managing their code: one typo and nothing works anymore. One of the best programs for managing code is called Git. It was developed by Linus Thorvalts to manage the development of Linux. But what is Git exactly?
+
+You probably know that it is a good idea to save your work in case your program crashes and to make a backup in case your hard drive crashes. Git does not change that. For you personally, Git is about taking snapshots of your files so you can return to that moment at any time in the future. For a team, Git is about working together without getting in each others way.
 
 Do you keep multiple versions of documents? Do you wish you had more insight in what you where doing with them a year ago? Do you need to work on documents with others? Then Git can simplify your life. Imagine Git as your personal librarian.
 
 # Version management
-Imagine standing in your private library. Around you are all the important versions of all the documents you have ever worked on. Every time you archived a set of documents they where bound into a book that appears in this library. Git also added a first page to each book with a description of what is inside:
+Imagine standing in your private library. Around you are all the important versions of all the documents you have ever worked on. Every time you archived a set of documents they where bound into a book that appears in this library. Git also added a first page to each book with a description of what's inside:
 
   * The documents in the book and their authors.
   * The reason this set of documents was put in the library.
