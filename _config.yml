@@ -1,8 +1,8 @@
 # Site settings
-title: evflex
+title: EVflex
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'http://evflex.org' # the base hostname & protocol for your site
+url: 'http://EVflex.org' # the base hostname & protocol for your site
 
 # Build settings
 markdown:            kramdown

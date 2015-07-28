@@ -2,12 +2,12 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>evflex</title>
+    <title>EVflex</title>
     <description></description>
-    <link>http://evflex.org/</link>
-    <atom:link href="http://evflex.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2015 15:09:25 +0200</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2015 15:09:25 +0200</lastBuildDate>
+    <link>http://EVflex.org/</link>
+    <atom:link href="http://EVflex.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 28 Jul 2015 15:37:05 +0200</pubDate>
+    <lastBuildDate>Tue, 28 Jul 2015 15:37:05 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -131,9 +131,9 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
   &lt;p&gt;Erg mooi.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sat, 25 Jul 2015 00:00:00 +0200</pubDate>
-        <link>http://evflex.org/back-to-newer%20site/</link>
-        <guid isPermaLink="true">http://evflex.org/back-to-newer%20site/</guid>
+        <pubDate>Tue, 28 Jul 2015 00:00:00 +0200</pubDate>
+        <link>http://EVflex.org/jekyll-themes/</link>
+        <guid isPermaLink="true">http://EVflex.org/jekyll-themes/</guid>
         
         <category>home</category>
         
@@ -208,8 +208,8 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
 &lt;p&gt;Donec facilisis magna in sapien convallis auctor. In porttitor neque magna, ut aliquet diam mollis mattis. Praesent iaculis enim nisl, sit amet molestie nunc rutrum ut. Sed tincidunt dolor eget lacinia interdum. Morbi blandit, augue nec pharetra posuere, odio tortor congue magna, sed dictum libero nunc quis mi. Donec feugiat massa tortor, id tincidunt velit scelerisque sed &lt;code&gt;&amp;lt;i&amp;gt;emph&amp;lt;/i&amp;gt;&lt;/code&gt;. Suspendisse lacinia diam id lectus dignissim, sit amet eleifend elit rutrum. Mauris nunc sapien, ultrices sed vehicula sed, efficitur nec leo.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://evflex.org/back-to-work/</link>
-        <guid isPermaLink="true">http://evflex.org/back-to-work/</guid>
+        <link>http://EVflex.org/back-to-work/</link>
+        <guid isPermaLink="true">http://EVflex.org/back-to-work/</guid>
         
         <category>home</category>
         
@@ -297,8 +297,8 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
 &lt;p&gt;You want on the project with Jane so you make a copy on Git and invite Jane.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://evflex.org/back-to-newest%20site/</link>
-        <guid isPermaLink="true">http://evflex.org/back-to-newest%20site/</guid>
+        <link>http://EVflex.org/back-to-newest%20site/</link>
+        <guid isPermaLink="true">http://EVflex.org/back-to-newest%20site/</guid>
         
         <category>home</category>
         
@@ -334,8 +334,8 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
 &lt;p&gt;Donec facilisis magna in sapien convallis auctor. In porttitor neque magna, ut aliquet diam mollis mattis. Praesent iaculis enim nisl, sit amet molestie nunc rutrum ut. Sed tincidunt dolor eget lacinia interdum. Morbi blandit, augue nec pharetra posuere, odio tortor congue magna, sed dictum libero nunc quis mi. Donec feugiat massa tortor, id tincidunt velit scelerisque sed. Suspendisse lacinia diam id lectus dignissim, sit amet eleifend elit rutrum. Mauris nunc sapien, ultrices sed vehicula sed, efficitur nec leo.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://evflex.org/japanese-breeze/</link>
-        <guid isPermaLink="true">http://evflex.org/japanese-breeze/</guid>
+        <link>http://EVflex.org/japanese-breeze/</link>
+        <guid isPermaLink="true">http://EVflex.org/japanese-breeze/</guid>
         
         <category>japan</category>
         
@@ -369,8 +369,8 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
 &lt;p&gt;Donec facilisis magna in sapien convallis auctor. In porttitor neque magna, ut aliquet diam mollis mattis. Praesent iaculis enim nisl, sit amet molestie nunc rutrum ut. Sed tincidunt dolor eget lacinia interdum. Morbi blandit, augue nec pharetra posuere, odio tortor congue magna, sed dictum libero nunc quis mi. Donec feugiat massa tortor, id tincidunt velit scelerisque sed. Suspendisse lacinia diam id lectus dignissim, sit amet eleifend elit rutrum. Mauris nunc sapien, ultrices sed vehicula sed, efficitur nec leo.&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://evflex.org/big-city-life/</link>
-        <guid isPermaLink="true">http://evflex.org/big-city-life/</guid>
+        <link>http://EVflex.org/big-city-life/</link>
+        <guid isPermaLink="true">http://EVflex.org/big-city-life/</guid>
         
         <category>work</category>
         
@@ -413,8 +413,8 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
 &lt;p&gt;Pellentesque non turpis quis lectus rhoncus ultricies. Aenean hendrerit tristique ante quis luctus. Integer sed elit dolor. Sed volutpat a enim eget commodo. Etiam ac massa dictum risus molestie congue ut ac risus. Fusce id augue et nisi fermentum ullamcorper id non felis. Nunc massa eros, facilisis vel eros id, porttitor viverra est. Duis vitae magna a magna sodales mollis in id felis. Vivamus felis tellus, scelerisque vitae elementum non, consectetur eu dolor. Curabitur mattis euismod risus viverra venenatis. Maecenas quis euismod arcu. Etiam condimentum justo vel arcu interdum, sit amet dictum libero vestibulum. Sed eu sem purus. Quisque euismod orci vitae massa condimentum pellentesque. Etiam tempor, tellus ac facilisis vulputate, quam metus ullamcorper lacus, at hendrerit dolor felis eu nisi.&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://evflex.org/a-snowy-day/</link>
-        <guid isPermaLink="true">http://evflex.org/a-snowy-day/</guid>
+        <link>http://EVflex.org/a-snowy-day/</link>
+        <guid isPermaLink="true">http://EVflex.org/a-snowy-day/</guid>
         
         <category>mountain</category>
         
@@ -439,8 +439,8 @@ Almace Scaffolding. Grote duidelijke letters en dynamische onderstreping maar he
 &lt;p&gt;Donec imperdiet accumsan faucibus. Nullam faucibus luctus quam, a dapibus neque aliquam quis. Aenean sit amet risus vitae lectus fermentum dapibus. Integer sit amet porttitor nisl. Etiam ac elit purus. Sed vulputate hendrerit euismod. Sed accumsan sem at eros tempor volutpat. Nam iaculis, leo sit amet viverra placerat, ante tortor fringilla erat, ac finibus nunc purus et lectus. Ut eu justo vulputate, tempus odio sed, mattis felis. Proin mollis dolor at sapien condimentum lobortis. Praesent non massa elementum, rutrum dui sit amet, feugiat velit. In a felis sit amet quam ultrices dignissim. Ut efficitur velit at purus placerat, eu finibus est pharetra. Aenean id molestie risus. Mauris gravida erat id diam condimentum viverra.&lt;/p&gt;
 </description>
         <pubDate>Fri, 09 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://evflex.org/the-sound-of-freedom/</link>
-        <guid isPermaLink="true">http://evflex.org/the-sound-of-freedom/</guid>
+        <link>http://EVflex.org/the-sound-of-freedom/</link>
+        <guid isPermaLink="true">http://EVflex.org/the-sound-of-freedom/</guid>
         
         <category>relax</category>
         

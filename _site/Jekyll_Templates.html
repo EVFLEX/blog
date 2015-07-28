@@ -82,12 +82,15 @@ img {
 </div>
 <div id="directory-structure-inside-the-repo" class="section level3">
 <h3>Directory structure inside the repo</h3>
-<p>I use the insight from Jekyllbootstrap and a theme I found called <a href="http://sgentile.it/Travelogue/">Travelogue</a> to get my bearings:</p>
+<p>I use the insight from Jekyllbootstrap and a theme I found called <a href="http://sgentile.it/Travelogue/">Travelogue</a> to get my bearings. I also looked up <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">html tags at mozilla</a>:</p>
 <div id="root" class="section level4">
 <h4>root</h4>
 <p>404.html is a page to show when an 404 error occurs.</p>
-<p>_<strong>config.yml</strong> stores configuration data (important page!).</p>
-<p><strong>about.md</strong> is the about page.</p>
+<p>_<strong>config.yml</strong> stores configuration data.</p>
+<p>about.md contains some “about” information.</p>
+<p><strong>archive.html</strong> shows all posts.</p>
+<p>feed.xml is apparently for some kind of rss feed.</p>
+<p><strong>index.html</strong></p>
 <p>_<strong>includes</strong> is for partial views.</p>
 <p>_layouts<br /> this folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections. * _posts<br /> this folder contains your dynamic content/posts. the naming format is required to be YYYY-MM-DD-your-blogpost-url-name.md * _site<br /> this is where the generated site will be placed once Jekyll is done transforming it. * assets<br /> this folder is not part of the standard jekyll structure. The assets folder represents any generic folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.</p>
 </div>
