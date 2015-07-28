@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll Themes"
 author: "Auke Hoekstra"
-date: 2015-07-28
+date: 2015-07-27
 thumb: ../pics/yellow_electric_car_charger.jpg
 categories: development work
 tags: home work office coding design

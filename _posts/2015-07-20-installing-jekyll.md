@@ -1,7 +1,7 @@
 ---
 title: "Installing Jekyll and Github pages"
 author: "Auke Hoekstra"
-date: "27 juli 2015"
+date: "20 juli 2015"
 output: html_document
 ---
 
@@ -62,7 +62,7 @@ Redirect .com, .net, .nl and .eu to .org.
 
 The video says to create a file called "CNAME" with as content just the URL where you want to point from. E.g. evflex.org. Then:
 
-    git add . 
+    git add .
     git commit -m "cname"
     git checkout gh-pages # switches you to the gh-pages branch
     git merge master # merges cname file of the master into gh-pages
@@ -85,7 +85,7 @@ This can take up to 24 hours but within a minute I could type <evflex.org> and <
 Windows is not officially supported (?) but I was directed to <http://jekyll-windows.juthilo.com/>. This site told me to to to <http://rubyinstaller.org/downloads/> and install Ruby and the Devkit (like DevKit-mingw64). I had to restart the computer before I could give the following commands in powershell:
 
     cd c:\Ruby22-x64start
-    ruby dk.rb init 
+    ruby dk.rb init
     ruby dk.rb install
 
 Then I installed Python version 2 (!). Don't forget to choose "add python.exe to path" as a complete install on the harddrive. This will also give you pip. Finally we do:

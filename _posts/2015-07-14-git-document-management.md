@@ -2,7 +2,7 @@
 layout: post
 title: "Git Document Management"
 author: "Auke Hoekstra"
-date: 2015-02-06
+date: 2015-07-14
 /backgrounds: ../Pics/shared_public_library.jpg
 thumb: ../Pics/Felicia_Day_Thumb.jpg
 categories: development work
