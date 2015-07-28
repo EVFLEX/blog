@@ -10,10 +10,10 @@ output: html_document
 [Jekyllrb](jekyllrb.com) is supposed to be the comprehensive reference for this but because I wanted something quick that took my by the hand I followed along with this [video by Brad Westfall](https://youtu.be/nN6QuNqmAwk).
 
 ### Make powershell default
-First I made powershell the default command line on my windows machine. Simply install powershell and run the [first script on this page](http://blogs.interfacett.com/how-make-powershell-default-console-windows-server-core). It can do everything cmd.exe does but it can do much more and has the convenience that it supports cut and paste.
+First I made powershell the default command line on my windows machine. Simply install powershell and run the [first script on this page](http://blogs.interfacett.com/how-make-powershell-default-console-windows-server-core). Powershell can do much more than your regular command line. Two examples: it supports cut-and-paste and shows you which branch you are in.
 
 ### Create a hello world page
-Then I opened github for windows and using the gearwheel opened the github shell. Powershell opened for me in the right directory (github root). Then I typed:
+I opened github for windows and (using the gearwheel) opened the github shell. Powershell opened for me in the right directory (github root). Then I typed:
 
     mkdir evflex        # to create a directory
     cd blog             # go into the directory

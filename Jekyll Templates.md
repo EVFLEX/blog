@@ -18,18 +18,33 @@ This offers simplicity (no databases etc.) and security (nothing to exploit). I 
 Jekyll works with a git repo. First I commit stuff to this repo. When I am satisfied I commit it to a special git branch called gh-pages. The Jekyll server discovers all stuff in this branche and parses the .md files into webpages that I can view locally. When I'm satisfied I push to my remote gh-pages branch on Github and they will show up on my site evflex.org.
 
 ### Directory structure inside the repo
+I use the insight from Jekyllbootstrap and a theme I found called [Travelogue](http://sgentile.it/Travelogue/) to get my bearings. I also looked up [html tags at mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning): 
 
-  * _config.yml: stores configuration data.
+#### root
 
-  * _includes: this folder is for partial views.
+404.html is a page to show when an 404 error occurs.
 
-  * _layouts: this folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.
+_**config.yml** stores configuration data.
 
-  * _posts: this folder contains your dynamic content/posts. the naming format is required to be YYYY-MM-DD-your-blogpost-url-name.md
-  
-  * _site: this is where the generated site will be placed once Jekyll is done transforming it.
+about.md contains some "about" information.
 
-  * assets: this folder is not part of the standard jekyll structure. The assets folder represents any generic folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.
+**archive.html** shows all posts.
+
+feed.xml is apparently for some kind of rss feed.
+
+**index.html** 
+
+
+_**includes** is for partial views.
+
+_layouts  
+  this folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.
+  * _posts  
+  this folder contains your dynamic content/posts. the naming format is required to be YYYY-MM-DD-your-blogpost-url-name.md
+  * _site  
+  this is where the generated site will be placed once Jekyll is done transforming it.
+  * assets  
+  this folder is not part of the standard jekyll structure. The assets folder represents any generic folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.
 
 
 
