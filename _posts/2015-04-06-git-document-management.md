@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git as Your Personal Librarian"
+title: "Git Document Management"
 author: "Auke Hoekstra"
 date: 2015-02-06
 /backgrounds: ../Pics/shared_public_library.jpg
@@ -62,10 +62,3 @@ A shared directory (e.g. Dropbox) is often an improvement to email. But how do y
 ![public library](../Pics/shared_public_library.jpg)
 
 With Git you have a shared public library with all the bells and whistles. Just stick to your simple stage-commit routine and Git takes care of the rest. With Git you have access to all versions of each others books with a crystal clear version history. You can get an email everytime someone makes a commit or you can just dive into the repository when you feel like it. Either way you can get to work right away with the whole document history at your fingertips.
-
-# How to work together
-Imagine you are working on project-x and you also have an online copy on Github. You want to collaborate with Jane so you invite her to your library. Now you can both borrow books from the library.
-
-
-
-You want on the project with Jane so you make a copy on Git and invite Jane.
