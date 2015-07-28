@@ -8,13 +8,8 @@ categories: development work
 tags: home work office coding design
 ---
 
-# Reproducible science is within our reach!
-Science has lost its way by publishing papers that increasingly do not tell the whole story and therefore cannot be reproduced. The reason is that scientists increasingly use computers to produce their results but do not include the code they used. We should instead take a cue from open source communities everywhere:
-
-  * Write and disseminate "source code"
-  * Readers can copy the source and get the same results
-
-The R community is uniquely qualified to work in exactly this way because the R interpreter is itself open source and widely used while the language is compact enough to include in documents. In certain cases the writer of an article may provide an accompanying "package" and installing that package is no more than another instruction in the R code.
+# R markdown for reproducible science
+Ideally the reader of a scientific article is able to reproduce the experiment based on the contents of the article. With R the writer can come a long way because R itself is freely available and the instructions are compact enough to include in documents.
 
 This creates certain demands:
 
@@ -27,7 +22,7 @@ This creates certain demands:
     * Mathematical formula's displayed to humans
   * Source can directly compile to both web and print
 
-R markdown is meant to be the solution. It is easy to read and write. Using packages like knitr it can be compiled to web documents (HTML), print (PDF) and - if need be - Word. Computer code can be shown and executed within the document, either as short command "inline"" or complete "code chunk". For mathematical formula's we can insert Latex, both inline and in separate chunks.
+R markdown tries to fulfull those demands. It is easy to read and write. Using packages like knitr it can be compiled to web documents (HTML), print (PDF) and - if need be - Word. Computer code can be shown and executed within the document, either as short command "inline"" or complete "code chunk". For mathematical formula's we can insert Latex, both inline and in separate chunks.
 
 # Visualising science
 Before we choose a theme we should learn from the past. How have others visualised science?
