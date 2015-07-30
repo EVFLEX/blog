@@ -1,0 +1,43 @@
+graph FlyingLogic {
+	rankdir=LR;
+	subgraph cluster_eid24 {
+		label="Write one document with text and code";
+		eid1 [label="Generic | Source\ document\ in\ R\ markdown" shape=Mrecord style="filled" fillcolor="white"];
+		eid2 [label="Generic | R\ code\ and\ graphs" shape=Mrecord style="filled" fillcolor="white"];
+		eid12 [label="Generic | Pictures\ including\ SVG" shape=Mrecord style="filled" fillcolor="white"];
+		eid15 [label="Generic | Pandoc\ citations" shape=Mrecord style="filled" fillcolor="white"];
+		eid28 [label="Generic | Markdown\ text" shape=Mrecord style="filled" fillcolor="white"];
+		eid44 [label="Generic | Latex\ formula's" shape=Mrecord style="filled" fillcolor="white"];
+	}
+	subgraph cluster_eid27 {
+		label="Publish without touching the source";
+		eid18 [label="Generic | Publish\ to\ the\ web\ with\ Jekyll" shape=Mrecord style="filled" fillcolor="white"];
+		eid20 [label="Generic | knit\ PDF\ document" shape=Mrecord style="filled" fillcolor="white"];
+		eid22 [label="Generic | knit\ Word\ document" shape=Mrecord style="filled" fillcolor="white"];
+		eid25 [label="Generic | knit\ HTML" shape=Mrecord style="filled" fillcolor="white"];
+		eid9 [label="Generic | knit\ Github\ markdown" shape=Mrecord style="filled" fillcolor="white"];
+		eid4 [label="Generic | Knit\ output" shape=Mrecord style="filled" fillcolor="white"];
+		eid38 [label="Generic | Publish\ ready\ quality" shape=Mrecord style="filled" fillcolor="white"];
+		eid40 [label="Generic | For\ people\ only\ using\ office" shape=Mrecord style="filled" fillcolor="white"];
+		eid42 [label="Generic | Web\ ready" shape=Mrecord style="filled" fillcolor="white"];
+	}
+	subgraph cluster_eid37 {
+		label="Git and Github";
+		eid34 [label="Generic | Work\ on\ the\ document\ with\ multiple\ people\ at\ the\ same\ time" shape=Mrecord style="filled" fillcolor="white"];
+	}
+	eid4 -- eid9 [dir=forward];
+	eid9 -- eid18 [dir=forward];
+	eid4 -- eid20 [dir=forward];
+	eid4 -- eid22 [dir=forward];
+	eid4 -- eid25 [dir=forward];
+	eid2 -- eid1 [dir=forward];
+	eid12 -- eid1 [dir=forward];
+	eid15 -- eid1 [dir=forward];
+	eid28 -- eid1 [dir=forward];
+	eid1 -- eid34 [dir=forward];
+	eid34 -- eid4 [dir=forward];
+	eid20 -- eid38 [dir=forward];
+	eid22 -- eid40 [dir=forward];
+	eid25 -- eid42 [dir=forward];
+	eid44 -- eid1 [dir=forward];
+}

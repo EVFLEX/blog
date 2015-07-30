@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flyingLogic majorVersion="3" minorVersion="0" uuid="8401e9c1-08ec-49f9-94e7-136374ca1ebf">
+    <displaySettings addEntityAsSuccessor="false" annotationToBrowse="false" bias="Bias.end" confidenceVisible="false" edgeNotesVisible="false" edgeWeightsVisible="false" entityIdVisible="false"
+        entityTitleFontFamily="SansSerif" entityTitleFontSize="11" entityTitleFontStyle="plain" noteNumbersVisible="false" orientation="Orientation.leftToRight" projectManagementVisible="false"/>
+    <documentInfo author="" comments="" keywords="" title=""/>
+    <canvasSettings horizScroll="0.0" vertScroll="0.0" zoom="1.779"/>
+    <inspectorSettings visibility="true" width="284">
+        <inspector title="operators" visibility="open"/>
+        <inspector height="150" title="userattrs" visibility="minimized"/>
+        <inspector title="element" visibility="minimized"/>
+        <inspector title="navigation" visibility="minimized"/>
+        <inspector title="layout" visibility="open"/>
+        <inspector height="180" title="text" visibility="open"/>
+        <inspector title="document" visibility="minimized"/>
+        <inspector height="150" title="domain" visibility="open"/>
+    </inspectorSettings>
+    <printSettings footerLeft="" footerMiddle="" footerRight="" headerLeft="" headerMiddle="" headerRight=""/>
+    <decisionGraph>
+        <entityOperator class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator">
+            <fuzzyOr/>
+        </entityOperator>
+        <defaultJunctorOperator class="com.flyinglogic.logicgraph.operator.FuzzyAndVertexOperator">
+            <fuzzyAnd/>
+        </defaultJunctorOperator>
+        <logicGraph>
+            <operatorFamily class="com.flyinglogic.decisiongraph.DecisionGraphOperatorFamily"/>
+            <graph majorVersion="1" minorVersion="0" supportsGroups="true">
+                <attributes>
+                    <attribute class="com.flyinglogic.app.project.FLDate" key="projectstartdate">
+                        <date value="2015-07-28T00:00:00Z"/>
+                    </attribute>
+                    <attribute class="com.flyinglogic.app.project.FLDate" key="projectenddate">
+                        <date value="2015-08-04T00:00:00Z"/>
+                    </attribute>
+                </attributes>
+                <vertices>
+                    <vertex eid="1" inEdgeOrder="30 31 32 33 45">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Source document in R markdown</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">6</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-29T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-29T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="2">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">R code and graphs</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">5</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="4" outEdgeOrder="10 23 21 26">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Knit output</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">8</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-31T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-31T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="9">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">knit Github markdown</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">15</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="12">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Pictures including SVG</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">4</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="15">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Pandoc citations</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">3</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="18">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Publish to the web with Jekyll</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">16</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="20">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">knit PDF document</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">11</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="22">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">knit Word document</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">13</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="24" grouped="1 2 12 15 28 44">
+                        <attributes>
+                            <attribute class="java.lang.String" key="title">One source containing text and code</attribute>
+                            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                                <colorRGB blue="1.0" green="0.0" red="0.0"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="25">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Knit HTML</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">9</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-03T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="27" grouped="18 20 22 25 9 4 38 40 42">
+                        <attributes>
+                            <attribute class="java.lang.String" key="title">Publish without touching the source</attribute>
+                            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                                <colorRGB blue="1.0" green="0.0" red="0.0"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="28">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Markdown text</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">2</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="34">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Advanced document management for multiple people working on the same document at the same time with Git and Github</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">7</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-30T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-30T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="37" grouped="34">
+                        <attributes>
+                            <attribute class="java.lang.String" key="title">Collaborate</attribute>
+                            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                                <colorRGB blue="1.0" green="0.0" red="0.0"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="38">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Publish ready quality</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">12</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="40">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">For people only using office</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">14</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="42">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Web ready</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">10</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-08-04T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                    <vertex eid="44">
+                        <attributes>
+                            <attribute class="java.lang.String" key="type">entity</attribute>
+                            <attribute class="java.lang.String" key="title">Latex formula's</attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.FuzzyOrVertexOperator" key="forwardOperator">
+                                <fuzzyOr/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.logicgraph.entityclass.EntityClass" key="entityClass">
+                                <entityClass name="Generic" uuid="cf3b2595-f1eb-39fa-9809-078a5fd682f3"/>
+                            </attribute>
+                            <attribute class="java.lang.Double" key="effort">86400.0</attribute>
+                            <attribute class="java.lang.Integer" key="typeid">1</attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="startdate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                            <attribute class="com.flyinglogic.app.project.FLDate" key="enddate">
+                                <date value="2015-07-28T00:00:00Z"/>
+                            </attribute>
+                        </attributes>
+                    </vertex>
+                </vertices>
+                <edges>
+                    <edge eid="10" source="4" target="9">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="19" source="9" target="18">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="21" source="4" target="20">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="23" source="4" target="22">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="26" source="4" target="25">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="30" source="2" target="1">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="31" source="12" target="1">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="32" source="15" target="1">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="33" source="28" target="1">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="35" source="1" target="34">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="36" source="34" target="4">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="39" source="20" target="38">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="41" source="22" target="40">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="43" source="25" target="42">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                    <edge eid="45" source="44" target="1">
+                        <attributes>
+                            <attribute class="java.lang.Double" key="weight">1.0</attribute>
+                            <attribute class="com.flyinglogic.logicgraph.operator.MultiplyEdgeOperator" key="forwardOperator">
+                                <multiply/>
+                            </attribute>
+                            <attribute class="com.arciem.FuzzyBoolean" key="confidence">
+                                <fuzzyBoolean true="0.5"/>
+                            </attribute>
+                        </attributes>
+                    </edge>
+                </edges>
+            </graph>
+        </logicGraph>
+    </decisionGraph>
+</flyingLogic>

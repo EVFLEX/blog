@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head/>
+    <body>
+        <outline text="Generic: Web ready (= UNK)">
+            <outline text="Generic: knit HTML (= UNK)">
+                <outline text="Generic: Knit output (= UNK)">
+                    <outline text="Generic: Work on the document with multiple people at the same time (= UNK)">
+                        <outline text="Generic: Source document in R markdown (OR(…) = UNK)">
+                            <outline text="Generic: R code and graphs (UNK)"/>
+                            <outline text="Generic: Pictures including SVG (UNK)"/>
+                            <outline text="Generic: Pandoc citations (UNK)"/>
+                            <outline text="Generic: Markdown text (UNK)"/>
+                            <outline text="Generic: Latex formula's (UNK)"/>
+                        </outline>
+                    </outline>
+                </outline>
+            </outline>
+        </outline>
+        <outline text="Generic: Publish ready quality (= UNK)">
+            <outline text="Generic: knit PDF document (= UNK)">
+                <outline text="Generic: Knit output (= UNK)">
+                    <outline text="Generic: Work on the document with multiple people at the same time (= UNK)">
+                        <outline text="Generic: Source document in R markdown (OR(…) = UNK)">
+                            <outline text="Generic: R code and graphs (UNK)"/>
+                            <outline text="Generic: Pictures including SVG (UNK)"/>
+                            <outline text="Generic: Pandoc citations (UNK)"/>
+                            <outline text="Generic: Markdown text (UNK)"/>
+                            <outline text="Generic: Latex formula's (UNK)"/>
+                        </outline>
+                    </outline>
+                </outline>
+            </outline>
+        </outline>
+        <outline text="Generic: For people only using office (= UNK)">
+            <outline text="Generic: knit Word document (= UNK)">
+                <outline text="Generic: Knit output (= UNK)">
+                    <outline text="Generic: Work on the document with multiple people at the same time (= UNK)">
+                        <outline text="Generic: Source document in R markdown (OR(…) = UNK)">
+                            <outline text="Generic: R code and graphs (UNK)"/>
+                            <outline text="Generic: Pictures including SVG (UNK)"/>
+                            <outline text="Generic: Pandoc citations (UNK)"/>
+                            <outline text="Generic: Markdown text (UNK)"/>
+                            <outline text="Generic: Latex formula's (UNK)"/>
+                        </outline>
+                    </outline>
+                </outline>
+            </outline>
+        </outline>
+        <outline text="Generic: Publish to the web with Jekyll (= UNK)">
+            <outline text="Generic: knit Github markdown (= UNK)">
+                <outline text="Generic: Knit output (= UNK)">
+                    <outline text="Generic: Work on the document with multiple people at the same time (= UNK)">
+                        <outline text="Generic: Source document in R markdown (OR(…) = UNK)">
+                            <outline text="Generic: R code and graphs (UNK)"/>
+                            <outline text="Generic: Pictures including SVG (UNK)"/>
+                            <outline text="Generic: Pandoc citations (UNK)"/>
+                            <outline text="Generic: Markdown text (UNK)"/>
+                            <outline text="Generic: Latex formula's (UNK)"/>
+                        </outline>
+                    </outline>
+                </outline>
+            </outline>
+        </outline>
+    </body>
+</opml>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>A Post to Test Knitr to Jekyll</title>
+    <meta name="description" content="Test%201:%20plain%20Knit%20md_document*%20put%202015-07-27-a-post-to-test-knitr-to-jekyll.Rmd%20in%20_source%20with%20output:%20md_document%20and%20remove%20all%20other%20content%20generated%20...">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700italic,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/assets/css/vendors/slidebars.min.css">
+    <link rel="stylesheet" href="/assets/css/vendors/rrssb.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png" />
+
+    <link rel="canonical" href="http://EVflex.org/a-post-to-test-knitr-to-jekyll/">
+    <!--<link rel="alternate" type="application/rss+xml" title="EVflex" href="http://EVflex.org/feed.xml" />-->
+</head>
+
+
+<body>
+
+    <div class="loader">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+        <filter id="dropshadow" height="130%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+            <feOffset dx="0" dy="0" result="offsetblur"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.5s" repeatCount="indefinite"/>
+        </path><!-- style="filter:url(#dropshadow)" -->
+    </svg>
+</div>
+
+
+    <main id="sb-site">
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="post">
+    
+
+    <header class="post-header">
+        
+
+        <h1 class="post-title">A Post to Test Knitr to Jekyll</h1>
+    </header>
+
+    <article class="post-content">
+        <p>Test 1: plain Knit md_document
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: md_document and remove all other content generated in earlier experiments with this file.
+* Knit md into _source (push button)
+* Run jekyll serve in directory evflex (branche gh-pages) in powershell
+  * Nothing happens: stop jekyll serve
+* copy md_document and subfolder (figures) to _post.
+* Run jekyll serve again
+  * Jekyll stops because it cannot handle cars-1.png (invalid byte sequence)</p>
+
+<p>Test 2: generate md with servr::jekyll()
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: md_document and remove all other content generated in earlier experiments with this file.
+* run servr::jekyll() in the R Studio console
+  * a blank viewer is opened (showing html while there is only .md I presume)
+  * an .md file with the same name is created in _posts
+  * a directory with the same name is created in evflex/figure/source that contains a .png of the plots in the file.
+  * a directory with the same name is created in _site containing an index.html.
+    * we stop servr::jekyll() in the R console and start jekyll serve in powershell
+      * If we surf to 127.0.0.1:4000/filename the result is there but looks awful: yaml matter is missing and LaTex was ignored or the text is $shown as is$</p>
+
+<p>Test 3: generate html with servr::jekyll()
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: html_document and remove all other content generated in earlier experiments with this file.
+* run servr::jekyll() in the R Studio console
+  * a blank viewer is opened (showing html while there is only .md I presume)
+  * an .md file with the same name is created in _posts
+  * a directory with the same name is created in evflex/figure/source that contains png’s of the plots in the file.
+  * a directory with the same name is created in _site containing an index.html.
+    * we stop servr::jekyll() in the R console and start jekyll serve in powershell
+      * If we surf to 127.0.0.1:4000/filename the result is there but looks awful: yaml matter is missing and LaTex was ignored or the text is $shown as is$</p>
+
+<p>Test 4: generate html with servr::jekyll() in Yihui’s repo
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: html_document and remove all other content generated in earlier experiments with this file.</p>
+
+<h1 id="original-testcontent">Original testcontent</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
+
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<p><code>r
+summary(cars)
+</code></p>
+
+<p><code>
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+</code></p>
+
+<p>You can also embed plots, for example:</p>
+
+<p><img src="/figure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" /></p>
+
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+
+<h1 id="some-of-my-testcontent">Some of my testcontent</h1>
+
+<h1 id="heading-1">Heading 1</h1>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<ul>
+  <li>Bullet 1</li>
+  <li>Bullet 2
+    <ul>
+      <li>Lower level list</li>
+      <li>Lower level list</li>
+    </ul>
+  </li>
+  <li>And back</li>
+</ul>
+
+<h1 id="latex-textcontent-3-formulas">LateX textcontent (3 formula’s)</h1>
+
+<p>$( x^2 + y^2 = 1 )$</p>
+
+<script type="math/tex; mode=display">( x^2 + y^2 = 1 )</script>
+
+<script type="math/tex; mode=display">\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)</script>
+
+<h1 id="some-more-r-code">Some more R code</h1>
+
+<p>Now we write some R code chunks in this post. For example,</p>
+
+<p><code>r
+install.packages(c('servr', 'knitr'), repos = 'http://cran.rstudio.com')
+</code></p>
+
+<p><code>r
+options(digits = 3)
+cat("hello world!")
+</code></p>
+
+<p><code>
+## hello world!
+</code></p>
+
+<p><code>r
+set.seed(123)
+(x = rnorm(40) + 10)
+</code></p>
+
+<p><code>
+##  [1]  9.44  9.77 11.56 10.07 10.13 11.72 10.46  8.73  9.31  9.55 11.22
+## [12] 10.36 10.40 10.11  9.44 11.79 10.50  8.03 10.70  9.53  8.93  9.78
+## [23]  8.97  9.27  9.37  8.31 10.84 10.15  8.86 11.25 10.43  9.70 10.90
+## [34] 10.88 10.82 10.69 10.55  9.94  9.69  9.62
+</code></p>
+
+<p><code>r
+# generate a table
+knitr::kable(head(mtcars))
+</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: right">mpg</th>
+      <th style="text-align: right">cyl</th>
+      <th style="text-align: right">disp</th>
+      <th style="text-align: right">hp</th>
+      <th style="text-align: right">drat</th>
+      <th style="text-align: right">wt</th>
+      <th style="text-align: right">qsec</th>
+      <th style="text-align: right">vs</th>
+      <th style="text-align: right">am</th>
+      <th style="text-align: right">gear</th>
+      <th style="text-align: right">carb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Mazda RX4</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.62</td>
+      <td style="text-align: right">16.5</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mazda RX4 Wag</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.88</td>
+      <td style="text-align: right">17.0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Datsun 710</td>
+      <td style="text-align: right">22.8</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">108</td>
+      <td style="text-align: right">93</td>
+      <td style="text-align: right">3.85</td>
+      <td style="text-align: right">2.32</td>
+      <td style="text-align: right">18.6</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet 4 Drive</td>
+      <td style="text-align: right">21.4</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">258</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.08</td>
+      <td style="text-align: right">3.21</td>
+      <td style="text-align: right">19.4</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet Sportabout</td>
+      <td style="text-align: right">18.7</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">360</td>
+      <td style="text-align: right">175</td>
+      <td style="text-align: right">3.15</td>
+      <td style="text-align: right">3.44</td>
+      <td style="text-align: right">17.0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Valiant</td>
+      <td style="text-align: right">18.1</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">225</td>
+      <td style="text-align: right">105</td>
+      <td style="text-align: right">2.76</td>
+      <td style="text-align: right">3.46</td>
+      <td style="text-align: right">20.2</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code>r
+(function() {
+  if (TRUE) 1 + 1  # a boring comment
+})()
+</code></p>
+
+<p><code>
+## [1] 2
+</code></p>
+
+<p><code>r
+names(formals(servr::jekyll))  # arguments of the jekyll() function
+</code></p>
+
+<p><code>
+## [1] "dir"     "input"   "output"  "script"  "serve"   "command" "..."
+</code></p>
+
+<p>Just to test inline R expressions<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup> in <strong>knitr</strong>, we know the first element in <code>x</code> (created in the code chunk above) is 9.44. You can certainly draw some graphs as well:</p>
+
+<p><code>r
+par(mar = c(4, 4, .1, .1))
+plot(cars, pch = 19, col = 'red')  # a scatterplot
+</code></p>
+
+<p><img src="/figure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/cars-1.png" alt="A scatterplot of the cars data" /></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:2">
+      <p>The syntax in R Markdown for inline expressions is <code>`r code`</code>, where <code>code</code> is the R expression that you want to evaluate, e.g. <code>x[1]</code>. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </article>
+
+    <footer class="post-meta">
+        
+        <div class="meta">
+            <h3 class="meta-title">Date</h3>
+            <span class="meta-content">July 30, 2015</span>
+        </div>
+        
+        
+        <div class="meta">
+            <h3 class="meta-title">Author</h3>
+            <span class="meta-content">Auke Hoekstra</span>
+        </div>
+        
+        
+        <div class="meta">
+            <h3 class="meta-title">Categories</h3>
+            <span class="meta-content">
+                
+                    Jekyll&nbsp;
+                
+                    Rstats&nbsp;
+                
+            </span>
+        </div>
+        
+        
+        <div class="meta">
+            <h3 class="meta-title">Tags</h3>
+            <span class="meta-content">
+                
+                    Knitr&nbsp;
+                
+                    Servr&nbsp;
+                
+                    Httpuv&nbsp;
+                
+                    Websocket&nbsp;
+                
+            </span>
+        </div>
+        
+    </footer>
+
+    
+
+    
+
+</div>
+
+            </div>
+
+            
+
+
+
+
+            
+
+
+        </div>
+
+    </main>
+
+    <a href="#" class="sb-toggle-left">Menu
+    <span class="nav-icon"></span>
+</a>
+
+<div class="sb-slidebar sb-left sb-style-push">
+    <nav>
+        <a href="/"><h2 class="site-title">EVflex</h2></a>
+        <ul class="sb-menu">
+        
+        
+            
+                
+            
+        
+            
+                
+                <li class="sb-close ">
+                    <a href="/about/">About</a>
+                </li>
+                
+            
+        
+            
+                
+                <li class="sb-close ">
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+        </ul>
+
+        <div class="site-info">
+            <p>
+                EVflex &dash; Copyright &copy; 2015
+            </p>
+            <p>
+                Powered by Jekyll using <a href="http://github.com/SalGnt/Travelogue">Travelogue</a>
+            </p>
+        </div>
+    </nav>
+</div>
+
+
+    <script type="text/javascript" src="/assets/js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/libs/slidebars.min.js"></script>
+<script type="text/javascript" src="/assets/js/libs/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="/assets/js/libs/jquery.scrollstop.js"></script>
+<script type="text/javascript" src="/assets/js/libs/rrssb.min.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+<script type="text/javascript">
+    $(function($) {
+        $.slidebars();
+
+        var steps = [];
+        var images = [
+            
+        ];
+
+        if (images.length > 0) {
+            $('.loader').addClass('loading');
+
+            steps = scrollSteps(images.length);
+
+            $.backstretch(images, {
+                fade: 1000
+            });
+
+            $.backstretch('pause');
+        }
+
+        $(document).on("backstretch.before", function (e, instance, index) {
+            $('.loader').addClass('loading');
+        });
+
+        $(document).on('scrollstop', function () {
+            if (steps.length > 0) {
+                var percentage = scrollPercentage();
+
+                for (var i = 0; i < steps.length; i++) {
+                    if (percentage < steps[i]) {
+                        if (i == $("body").data("backstretch").index) {
+                            break;
+                        }
+
+                        $.backstretch('show', i);
+                        break;
+                    }
+                }
+            }
+        });
+
+        $(document).on("backstretch.after", function (e, instance, index) {
+            $('.loader').removeClass('loading');
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
