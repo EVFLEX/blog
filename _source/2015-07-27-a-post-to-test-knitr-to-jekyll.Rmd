@@ -7,26 +7,41 @@ categories: [jekyll, rstats]
 tags: [knitr, servr, httpuv, websocket]
 ---
 
-Test 1: plain Knit md_document
-* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: md_document and remove all other content generated in earlier experiments with this file.
-* Knit md into _source (push button)
-* Run jekyll serve in directory evflex (branche gh-pages) in powershell
-  * Nothing happens: stop jekyll serve
-* copy md_document and subfolder (figures) to _post.
-* Run jekyll serve again
-  * Jekyll stops because it cannot handle cars-1.png (invalid byte sequence)
-  
-Test 2: generate md with servr::jekyll()
-* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: md_document and remove all other content generated in earlier experiments with this file.
-* run servr::jekyll() in the R Studio console
-  * a blank viewer is opened (showing html while there is only .md I presume)
-  * an .md file with the same name is created in _posts
-  * a directory with the same name is created in evflex/figure/source that contains a .png of the plots in the file.
-  * a directory with the same name is created in _site containing an index.html.
-    * we stop servr::jekyll() in the R console and start jekyll serve in powershell
-      * If we surf to 127.0.0.1:4000/filename the result is there but looks awful: yaml matter is missing and LaTex was ignored or the text is $shown as is$
+**Remaining problems and observations**
 
-Test 3: generate html with servr::jekyll()
+* Running servr::jekyll(daemon = TRUE) leads to the R console crashing. So we have to run servr::jekyll() and cannot use the console anymore.
+  * This behavior is also observed in the orinigal site from yihui.
+* Preview in R Studio does not work
+  * it works fine in yihui's site so the problem should be soved when analysing the differences between the two sites
+* Latex code like $$( x^2 + y^2 = 1 )$$ or $$\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)$$ renders fine with Knit HTML but not with servr::jekyll(). This behavior is seen in both evflex and yihui. Could be that this has something to do with kramdown instead of rmarkdown being the rendering engine.
+* SVG does not render to PDF yet.
+* We have to run jekyll locally. This means resubmitting edits can only be done from a machine having all this installed and this makes collaboration harder. It would be better if we had jekyll running on Github. But of course this does not understand R Markdown which is a bit of a problem.
+
+
+**Test 6: succes! (sort of)**
+
+* put build.R in evflex
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: html_document and remove all other content generated in earlier experiments with this file.
+* run servr::jekyll() from the R console
+  * an empty viewer opens
+* open the brower and surf to 127.0.0.1:4321
+  * The website opens and the post looks good (still no latex though)
+* save new content
+  * it auto-refreshes in the browser
+
+**Test 5: as 4 but now in evflex again**
+
+  * When we stop jekyll in the console and start it in powershell we see the post is there and has been given some layout but does not look as nice. E.g. source blocks are divided into separate lines.
+
+
+**Test 4: generate html with servr::jekyll() in Yihui's repo**
+
+* as three but now from Yihui's repro **and after adding the laout: post** tag to YaML. 
+  * Much better! Liquid tags are also generated. However, no good Latex. Everything between $$this$$ is simply ignored and the other stuff treated as text.
+
+
+**Test 3: generate html with servr::jekyll()**
+
 * put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: html_document and remove all other content generated in earlier experiments with this file.
 * run servr::jekyll() in the R Studio console
   * a blank viewer is opened (showing html while there is only .md I presume)
@@ -36,18 +51,28 @@ Test 3: generate html with servr::jekyll()
     * we stop servr::jekyll() in the R console and start jekyll serve in powershell
       * If we surf to 127.0.0.1:4000/filename the result is there but looks awful: yaml matter is missing and LaTex was ignored or the text is $shown as is$
 
-Test 4: generate html with servr::jekyll() in Yihui's repo
-* as three but now from Yihui's repro **and after adding the laout: post** tag to YaML. 
-  * Much better! Liquid tags are also generated. However, no good Latex. Everything between $$this$$ is simply ignored and the other stuff treated as text.
-  
-Test 5: as 4 but now in evflex again
-  * When we stop jekyll in the console and start it in powershell we see the post is there and has been given some layout but does not look as nice. E.g. source blocks are divided into separate lines.
+
+**Test 2: generate md with servr::jekyll()**
+
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: md_document and remove all other content generated in earlier experiments with this file.
+* run servr::jekyll() in the R Studio console
+  * a blank viewer is opened (showing html while there is only .md I presume)
+  * an .md file with the same name is created in _posts
+  * a directory with the same name is created in evflex/figure/source that contains a .png of the plots in the file.
+  * a directory with the same name is created in _site containing an index.html.
+    * we stop servr::jekyll() in the R console and start jekyll serve in powershell
+      * If we surf to 127.0.0.1:4000/filename the result is there but looks awful: yaml matter is missing and LaTex was ignored or the text is $shown as is$
 
 
+**Test 1: plain Knit md_document**
 
-
-
-put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: html_document and remove all other content generated in earlier experiments with this file.
+* put 2015-07-27-a-post-to-test-knitr-to-jekyll.Rmd in _source with output: md_document and remove all other content generated in earlier experiments with this file.
+* Knit md into _source (push button)
+* Run jekyll serve in directory evflex (branche gh-pages) in powershell
+  * Nothing happens: stop jekyll serve
+* copy md_document and subfolder (figures) to _post.
+* Run jekyll serve again
+  * Jekyll stops because it cannot handle cars-1.png (invalid byte sequence)
 
 
 
@@ -88,7 +113,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 # LateX textcontent (3 formula's)
 
-$( x^2 + y^2 = 1 )$
+$/( x^2 + y^2 = 1 )$
 
 $$( x^2 + y^2 = 1 )$$
 
