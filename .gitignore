@@ -3,3 +3,6 @@
 .RData
 _site/
 .sass-cache/
+.html
+.docx
+.pdf
