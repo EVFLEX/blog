@@ -1,10 +1,16 @@
 ---
-layout: post
 title: "A Post to Test Knitr to Jekyll"
 author: "Auke Hoekstra"
 date: "30 juli 2015"
-categories: [jekyll, rstats]
-tags: [knitr, servr, httpuv, websocket]
+output: html_document
+layout: post
+tags:
+- markdown
+- knitr
+- Jekyll
+- GitHub
+thumb: ../pics/math-fonts.png
+categories: Workflow
 ---
 
 **Remaining problems and observations**
@@ -13,10 +19,8 @@ tags: [knitr, servr, httpuv, websocket]
   * This behavior is also observed in the orinigal site from yihui.
 * Preview in R Studio does not work
   * it works fine in yihui's site so the problem should be soved when analysing the differences between the two sites
-* Latex code like $$( x^2 + y^2 = 1 )$$ or $$\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)$$ renders fine with Knit HTML but not with servr::jekyll(). This behavior is seen in both evflex and yihui. Could be that this has something to do with kramdown instead of rmarkdown being the rendering engine.
-* SVG does not render to PDF yet.
-* We have to run jekyll locally. This means resubmitting edits can only be done from a machine having all this installed and this makes collaboration harder. It would be better if we had jekyll running on Github. But of course this does not understand R Markdown which is a bit of a problem.
-
+* Figures (last part of this page) do not display nicely.
+* Latex code like $$( x^2 + y^2 = 1 )$$ now displays in HTML but will not render to PDF.
 
 **Test 6: succes! (sort of)**
 
@@ -102,7 +106,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![plot of chunk unnamed-chunk-2](''figure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](/evflexfigure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/unnamed-chunk-2-1.png) 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
@@ -122,9 +126,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
   * Lower level list
 * And back
 
-# LateX textcontent (3 formula's)
-
-$/( x^2 + y^2 = 1 )$
+# LateX content
 
 $$( x^2 + y^2 = 1 )$$
 
@@ -222,4 +224,5 @@ par(mar = c(4, 4, .1, .1))
 plot(cars, pch = 19, col = 'red')  # a scatterplot
 {% endhighlight %}
 
-![A scatterplot of the cars data](''figure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/cars-1.png) 
+![A scatterplot of the cars data](/evflexfigure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/cars-1.png) 
+

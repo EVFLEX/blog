@@ -3,14 +3,14 @@ layout: post
 title: "Git Document Management"
 author: "Auke Hoekstra"
 date: 2015-07-14
-/backgrounds: ../Pics/shared_public_library.jpg
-thumb: ../Pics/Felicia_Day_Thumb.jpg
+backgrounds: ../pics/shared_public_library.jpg
+thumb: ../pics/Felicia_Day_Thumb.jpg
 categories: development work
 tags: home work office coding design
 ---
 ![](../Pics/Felicia_Day_Librarian_Widescreen.jpg)
 
-**I think the use of coders jargon clouds the fact Git is also perfect for "normal" people that want document management and collaboration for "normal" documents. E.g. lawwyers, writers, consultants and people working together on projects. This post uses the metaphor of a public library.**
+**I think the use of coders jargon clouds the fact Git is also perfect for "normal" people that want document management and collaboration for "normal" documents. E.g. students writing homework assignments, project members, writers, lawwyers and consultants. This post uses the metaphor of a public library.**
 
 # Introduction
 Programmers (or "coders") are notoriously precise about managing their code: one typo and nothing works anymore. One of their most beloved programs is called Git. It was developed by Linus Thorvalts to manage the development of Linux. But what is Git exactly?
