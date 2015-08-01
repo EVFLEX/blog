@@ -8,7 +8,7 @@ thumb: ../pics/john-chambers-thumb.jpg
 categories: DSL, computer language, markdown, LaTeX
 tags: home work office coding design
 ---
-**I would like to argue that all languages are domain specific languages and that using a combination of the right domain specific languages simplifies life and increases productivity. I'll try to make my point using three examples: first R, then Netlogo/GAML and finally a workflow using markdown, LaTeX, R, SVG and HTML.**
+**I would like to argue that all languages are domain specific languages and that using a combination of the right domain specific languages simplifies life and increases productivity. I'll try to make my point using three examples: first R, then Netlogo/GAML and finally a workflow using markdown, LaTeX, R and HTML.**
 
 ## Every language is Domain Specific
 The term general purpose language is misleading. It creates the impression that you we can have *"one language to rule them all"* to paraphrase Tolkien. And I've noticed that many programmers hope this is possible so they don't have to learn other languages. This is problematic because firstly there is no such thing as a general purpose language and secondly it is often simpler to learn and use multiple domain specific languages when they are the right tools for the job. Let's start with the first point.
