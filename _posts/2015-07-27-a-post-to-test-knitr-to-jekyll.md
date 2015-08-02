@@ -106,7 +106,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![plot of chunk unnamed-chunk-2](/evflexfigure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](/figure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/unnamed-chunk-2-1.png) 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
@@ -224,5 +224,5 @@ par(mar = c(4, 4, .1, .1))
 plot(cars, pch = 19, col = 'red')  # a scatterplot
 {% endhighlight %}
 
-![A scatterplot of the cars data](/evflexfigure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/cars-1.png) 
+![A scatterplot of the cars data](/figure/source/2015-07-27-a-post-to-test-knitr-to-jekyll/cars-1.png) 
 

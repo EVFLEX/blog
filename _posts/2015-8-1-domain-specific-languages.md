@@ -4,7 +4,7 @@ title: "Domain Specific Languages"
 author: "Auke Hoekstra"
 date: "1 augustus 2015"
 backgrounds: 
-thumb: ../pics/john-chambers-thumb.jpg
+thumb: /pics/john-chambers-thumb.jpg
 categories: DSL, computer language, markdown, LaTeX
 tags: home work office coding design
 ---
@@ -24,11 +24,11 @@ John (photo above) created the S language on which the R language is based and h
 
 John Chambers looks at how the computer does it's mathematical calculations (e.g. matrix multiplication) and observes that the speed increase is enormous if you do that in Fortran, C, C++ or another "general purpose" language. He only invented S (and indirectly R) so it could easily call on packages written in those other languages. The picture below illustrates the concept: the low level program is the circle which is packaged into a quadrant that is a lego piece for R. 
 
-![](../Pics/xabc-john-chambers.png)
+![](/Pics/xabc-john-chambers.png)
 
 Hadley Wickham (photo below) agrees with this but takes the next step. He makes the language itself better by adding domain specific functions that improve R's visualisation and data wrangling capabilities. So Hadleys starting point is an abstraction layer higher. John build a layer for a specific application on top of languages like C (which makes those languages by definition relatively generic) and Hadley builds a layer on top of R (which makes R by definition relatively generic).
 
-![Hadley with the chinese translation of his book ggplot2, courtesy of Yixuan](../pics/hadley-wickham-ggplot2-chinese.jpg)
+![Hadley with the chinese translation of his book ggplot2, courtesy of Yixuan](/pics/hadley-wickham-ggplot2-chinese.jpg)
 
 John had the insight that he could create an interface language that was much better suited for calling packages than the lower level languages in which the packages themselves where written. This combined with the ease in which you can write and use packages makes R a real productivity booster. Hadley improves on this by adding commands that make visualising and wrangling data easier. And of course there are many others who are improving R with either new low level calculation to call on or new human productivity enhancements. I especially like the magrittr package that give R a forward pipe operator (e.g. well known in F#) which replaces nested and confusing programming with linear and straightforward programming.
 
@@ -63,7 +63,7 @@ SumSquares <- function(n) sum((1:n)^2)
 {% endhighlight %}
 
 ## The example of Java, Netlogo & GAML
-I work at the Technical University of Delft in a department that does a lot of agent based modeling. If you want to make simple models quickly you use Netlogo with its simple domain specific language. If you want to work together on larger models you use agentspring or another Java based framework. But I am intriqued by the claim of many Netlogo programmers that they can build models 10 to 20 times faster in Netlogo. That seems like a big deal to me.
+I work at the Technical University of Delft in a department that does a lot of agent based modeling. If you want to make simple models quickly you use Netlogo with its simple domain specific language. If you want to work together on larger models you use agentspring or another Java based framework. But I am intriqued by the claim of many Netlogo programmers that they can build models 10 to 20 times faster in Netlogo than Java. That seems like a big deal to me.
 
 I think agent based programming in Netlogo instead of Java is analogous to data analysis in R instead of C. However, Netlogo has many flaws. E.g. it only works with a simple grid spatially and it has no multi-level agent definition with inheritance. It is also locked into an IDE that is simple but also rigid and a bit behind the times. 
 
@@ -78,7 +78,7 @@ If writing is your objective you are much better off using LaTeX: you can easily
 
 In my opinion markdown is much better for normal writing: less work and it looks very natural when you see the plain text. E.g. to get *italic* you simply write `*italic*`: two time * and you are done. It seems trivial but it means you can write comfortably in plain text and that is a big thing because using plain text gives you access to a range of powerful versioning and collaboration tools developed for code. All of a sudden you can version and share what you do in Github and create output to a range of different formats.
 
-But you don't need to leave LaTeX behind! If you need to type something like a mathematical formula you can simply switch to LaTeX on the fly by typing two dollar sings. So if you drop in `$$( x^2 + y^2 = 1 )$$` you get $$( x^2 + y^2 = 1 )$$.
+But you don't need to leave LaTeX behind! If you need to type something like a mathematical formula you can simply switch to LaTeX on the fly by typing two dollar signs. So if you drop in `$$( x^2 + y^2 = 1 )$$` you get $$( x^2 + y^2 = 1 )$$.
 
 And why stop at LaTeX? You can of course also drop in pieces of other languages like HTML and - even more interesting - R. If you want to include the square root of 3 you just type `sqrt(3)` to get 1.7320508. Or how about a plot created by doing a calculation in R? Just put in some R code and see the result. E.g.
 
@@ -88,7 +88,7 @@ par(mar = c(4, 4, .1, .1))
 plot(cars, pch = 19, col = 'red')  # a scatterplot
 {% endhighlight %}
 
-![A scatterplot of the cars data](/evflexfigure/source/2015-8-1-domain-specific-languages/cars-1.png) 
+![A scatterplot of the cars data](/figure/source/2015-8-1-domain-specific-languages/cars-1.png) 
 
 ## Conclusions
-I've tried to show that there's no such thing as a general purpose language that does it all and that you are much better of mixing and matching domain specific languages. It makes your code shorter and increases your productivity.
+I've tried to show that there's no such thing as a general purpose language that does it all and that you are much better of mixing and matching the right domain specific languages. It makes your code shorter and increases your productivity.
