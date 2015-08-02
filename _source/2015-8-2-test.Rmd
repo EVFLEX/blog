@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Test"
+author: "Auke Hoekstra"
+date: "1 augustus 2015"
+backgrounds: 
+thumb: /pics/john-chambers-thumb.jpg
+categories: DSL, computer language, markdown, LaTeX
+tags: home work office coding design
+---
+#This is a test.
