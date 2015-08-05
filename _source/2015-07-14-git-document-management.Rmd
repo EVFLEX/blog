@@ -3,8 +3,8 @@ layout: post
 title: "Git Document Management"
 author: "Auke Hoekstra"
 date: 2015-07-14
-backgrounds: ../pics/shared_public_library.jpg
-thumb: ../pics/Felicia_Day_Thumb.jpg
+backgrounds: pics/shared_public_library.jpg
+thumb: pics/Felicia_Day_Thumb.jpg
 categories: development work
 tags: home work office coding design
 ---
