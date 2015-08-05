@@ -15,11 +15,23 @@ SDMX stands for [Statistical Data and Metadata Exchange](https://en.wikipedia.or
 
 In this example I want to see how The Netherlands is doing with regard to producing renewable energy, relative to other European countries.
 
+# Finding the dataset and its dimensions
 First I have to find the relevant dataset in the large amount of datasets that eurostat has. There are [multiple methods](http://ec.europa.eu/eurostat/web/sdmx-web-services/a-few-useful-points) but I like the [data navigation tree](http://ec.europa.eu/eurostat/data/database). So I click open "Database by themes", "Environment and energy", "Energy", quantities, annual data, supply. I find that the dataset I need is **"nrg_107a"**.
 
 ![](/pics/eurostat-data-navigation-tree.png)
 
 Now I click on the data explorer to see what I've got here. This is the icon with a table and a magnifier, to the left of the title of my dataset (left of the yellow "zip" icon).
+
+![](eurostat-data-explorer.png)
+
+If I click on the plus next to TIME a new window opens (called dimension modification dialog) showing me I have data from 1990 to 2013. The other tabs at the top of this windows show me GEO, INDIC_NRG, PRODUCT and UNIT. Clicking on INDIC_NRG shows me that are 83 indices of which I have currently selected Primary production.
+
+# Defining a query
+
+
+http://ec.europa.eu/eurostat/SDMX/diss-web/rest/datastructure/ESTAT/DSD_nrg_107a
+
+
 
 
 ```{r eval=FALSE}
