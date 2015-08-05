@@ -3,12 +3,12 @@ layout: post
 title: "Git Document Management"
 author: "Auke Hoekstra"
 date: 2015-07-14
-backgrounds: ../pics/shared_public_library.jpg
-thumb: ../pics/Felicia_Day_Thumb.jpg
+backgrounds: pics/shared_public_library.jpg
+thumb: pics/Felicia_Day_Thumb.jpg
 categories: development work
 tags: home work office coding design
 ---
-![](../Pics/Felicia_Day_Librarian_Widescreen.jpg)
+![](pics/Felicia_Day_Librarian_Widescreen.jpg)
 
 **I think the use of coders jargon clouds the fact Git is also perfect for "normal" people that want document management and collaboration for "normal" documents. E.g. students writing homework assignments, project members, writers, lawyers and consultants. This post uses the metaphor of a public library.**
 
@@ -35,7 +35,7 @@ Working with Git becomes straighforward with this mental image in mind:
 
 The library is called a "**repository**"" or "repo" in Git lingo. When you encounter the word repository you can imagine a library in your mind.
 
-![private library](../Pics/Private_Library.jpg)
+![private library](pics/Private_Library.jpg)
 
 Maybe staging seems unnecesary to you and when you are working on one unconnected document it is. But often you are working on multiple documents at once. E.g. a Word document containing graphs from an Excel spreadsheet. Isn't it neat that you can easily commit a set of documents belonging so you can return to their corresponding versions later?
 
@@ -59,6 +59,6 @@ If you work together with others on documents, chances are that you often email 
 
 A shared directory (e.g. Dropbox) is often an improvement to email. But how do you know who updated the document when and for what reason? Dropbox does not exactly give you a nice version history. And how do you get notified something changed? Dropbox can do this automatically but do you want email everytime someone makes a small change? And don't you want to work on the document in private sometimes? So the usual solution is to save new versions of the document in the Dropbox folder under a new name and tell everybody about it through email. This kind of brings us back to square one.
 
-![public library](../Pics/shared_public_library.jpg)
+![public library](pics/shared_public_library.jpg)
 
 With Git you have a shared public library with all the bells and whistles. Just stick to your simple stage-commit routine and Git takes care of the rest. With Git you have access to all versions of each others books with a crystal clear version history. You can get an email everytime someone makes a commit or you can just dive into the repository when you feel like it. Either way you can get to work right away with the whole document history at your fingertips.
