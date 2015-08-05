@@ -4,6 +4,7 @@
 _site/
 .sass-cache/
 pre-source/
+pics/
 .html
 .docx
 .pdf
