@@ -17,11 +17,7 @@ In this example I want to see how The Netherlands is doing with regard to produc
 
 First I have to find the relevant dataset in the large amount of datasets that eurostat has. There are [multiple methods](http://ec.europa.eu/eurostat/web/sdmx-web-services/a-few-useful-points) but I like the [data navigation tree](http://ec.europa.eu/eurostat/data/database). So I click open "Database by themes", "Environment and energy", "Energy", quantities, annual data, supply. I find that the dataset I need is **"nrg_107a"**.
 
-<<<<<<< HEAD
 ![](/pics/eurostat-data-navigation-tree.png)
-=======
-![](pics/eurostat-data-navigation-tree.png)
->>>>>>> 3715490ef05201b4de2e9f03fa5dd9b41d61d8c1
 
 Now I click on the data explorer to see what I've got here. This is the icon with a table and a magnifier, to the left of the title of my dataset (left of the yellow "zip" icon).
 
