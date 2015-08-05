@@ -27,7 +27,7 @@ Now I click on the data explorer to see what I've got here. This is the icon wit
 install.packages("rsdmx")
 library(rsdmx)
 
-#read EUROSTAT dataset
+# read EUROSTAT dataset
 dataURL <- "http://ec.europa.eu/eurostat/SDMX/diss-web/rest/data/nama_gdp_c"
 sdmx <- readSDMX(dataURL)
 stats <- as.data.frame(sdmx)
@@ -52,7 +52,7 @@ Browsing using SDMX
 [SDMX connector for R (RJSDMX)](https://github.com/amattioc/SDMX/wiki/SDMX-Connector-for-R-%28RJSDMX%29)
 
 
-#read EUROSTAT dataset
+# read EUROSTAT dataset
 dataURL <- "http://ec.europa.eu/eurostat/SDMX/diss-web/rest/data/cdh_e_fos/"
 sdmx <- readSDMX(dataURL)
 stats <- as.data.frame(sdmx)
