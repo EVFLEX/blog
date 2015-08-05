@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Import from Eurostat"
+author: "Auke Hoekstra"
+date: 2015-08-05
+backgrounds: /pics/europe-countries-map.png
+thumb: /pics/eurostat.jpg
+categories: development work
+tags: home work office coding design
+---
+
+**Let me show how to import data from Eurostat using SDMX.**
+
+SDMX stands for [Statistical Data and Metadata Exchange](https://en.wikipedia.org/wiki/SDMX). SDMX gives you access to data from Eurostat, the United Nations, the IMF and the OECD to name a few. It lets you download complete datasets including metadata (headers et cetera) automatically and from within R.
+
+In this example I want to see how The Netherlands is doing with regard to producing renewable energy, relative to other European countries.
+
+First I have to find the relevant dataset in the large amount of datasets that eurostat has. There are [multiple methods](http://ec.europa.eu/eurostat/web/sdmx-web-services/a-few-useful-points) but I like the [data navigation tree](http://ec.europa.eu/eurostat/data/database). So I click open "Database by themes", "Environment and energy", "Energy", quantities, annual data, supply. I find that the dataset I need is **"nrg_107a"**.
+
+![](/pics/eurostat-data-navigation-tree.png)
+
+Now I click on the data explorer to see what I've got here. This is the icon with a table and a magnifier, to the left of the title of my dataset (left of the yellow "zip" icon).
+
+
+```{r eval=FALSE}
+
+
+
+install.packages("rsdmx")
+library(rsdmx)
+
+#read EUROSTAT dataset
+dataURL <- "http://ec.europa.eu/eurostat/SDMX/diss-web/rest/data/nama_gdp_c"
+sdmx <- readSDMX(dataURL)
+stats <- as.data.frame(sdmx)
+head(stats)
+
+27*5*10
+
+
+SDMX seems the way to go
+[Eurostat SDMX tutorials](https://webgate.ec.europa.eu/fpfis/mwikis/sdmx/index.php/Main_Page)
+
+
+
+
+[Compiling Eurostat database](http://www.rpubs.com/kproductivity/rsdmx1)
+[rsdmx on Github](https://github.com/opensdmx/rsdmx)
+[more rsdmx on Github](https://github.com/opensdmx/rsdmx/wiki)
+[rsdmx package reference](https://cran.r-project.org/web/packages/rsdmx/rsdmx.pdf)
+[discussion on Stackoverflow](http://stackoverflow.com/questions/12762431/is-this-the-solution-to-get-data-from-eurostat-into-r)
+
+Browsing using SDMX
+[SDMX connector for R (RJSDMX)](https://github.com/amattioc/SDMX/wiki/SDMX-Connector-for-R-%28RJSDMX%29)
+
+
+#read EUROSTAT dataset
+dataURL <- "http://ec.europa.eu/eurostat/SDMX/diss-web/rest/data/cdh_e_fos/"
+sdmx <- readSDMX(dataURL)
+stats <- as.data.frame(sdmx)
+head(stats)
+
+
+
+```
+
